@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Home - My Site{% endblock %}
+
+{%block content%}
+    <h2>This is the home page</h2>
+    {% for pro in product%}
+    <div style="background-color: red;border: 10px;">
+    <li>{{pro.name}} {{pro.price}} {{pro.model}}</li>
+    {% endfor %}
+    </div>
+{% endblock %} 
