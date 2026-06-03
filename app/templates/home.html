@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% extends 'base.html'%}
 {% block title %} Home{% endblock%}
 {% block style %}
@@ -15,3 +16,17 @@
 
 
 {% endblock%}
+=======
+{% extends "base.html" %}
+
+{% block title %}Home - My Site{% endblock %}
+
+{%block content%}
+    <h2>This is the home page</h2>
+    {% for pro in product%}
+    <div style="background-color: red;border: 10px;">
+    <li>{{pro.name}} {{pro.price}} {{pro.model}}</li>
+    {% endfor %}
+    </div>
+{% endblock %} 
+>>>>>>> e6087ec6c3a1780f9a634baaf575d87916e2192f

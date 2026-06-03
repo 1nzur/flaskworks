@@ -168,6 +168,7 @@ class User(BaseModel):
 
     def __repr__(self):
         """Developer-friendly representation for debugging."""
+<<<<<<< HEAD
         return f"<User email={self.email}>"
     
     def find_all_Users(self,order_by="id"):
@@ -177,3 +178,6 @@ class User(BaseModel):
         )
         db.close()
         return results
+=======
+        return f"<User email={self.email}>"
+>>>>>>> e6087ec6c3a1780f9a634baaf575d87916e2192f

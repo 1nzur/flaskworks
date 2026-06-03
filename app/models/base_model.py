@@ -32,11 +32,15 @@ class BaseModel(ABC):
         """Each child model must specify its database table name."""
         pass
 
+<<<<<<< HEAD
     # ── Shared Methods (inherited by all child models) ──────
 
     # @abstractmethod
     # def save(self):
     #     pass
+=======
+    # ── Shared Methods (inherited by all child models) ──────                                                                                                
+>>>>>>> e6087ec6c3a1780f9a634baaf575d87916e2192f
 
     def find_by_id(self, record_id):
         """Find a single record by its ID."""
@@ -76,4 +80,8 @@ class BaseModel(ABC):
         """Delete a record by its ID."""
         db = Database()
         db.execute(f"DELETE FROM {self.table} WHERE id = %s", (record_id,))
+<<<<<<< HEAD
         db.close()
+=======
+        db.close()
+>>>>>>> e6087ec6c3a1780f9a634baaf575d87916e2192f

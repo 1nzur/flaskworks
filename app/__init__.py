@@ -11,4 +11,8 @@ def create_app():
 
     auth_routes = AuthRoutes() 
     app.register_blueprint(auth_routes.register()) 
+<<<<<<< HEAD
     return app
+=======
+    return app
+>>>>>>> e6087ec6c3a1780f9a634baaf575d87916e2192f
