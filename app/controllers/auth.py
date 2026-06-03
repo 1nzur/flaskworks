@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 """
 =============================================================
   OOP Concept: INHERITANCE & POLYMORPHISM (Auth Controller)
@@ -185,28 +184,3 @@ class AuthController(BaseController):
             return redirect(url_for("auth.dashboard"))
         
         return render_template("editUser.html", user = user_data)
-=======
-from flask import render_template,request
-
-class AuthController:
-    def login(self):
-        return render_template("login.html")
-    
-    def register(self):
-        return render_template("register.html")
-    
-    def about(self):
-        return render_template("about.html")
-    
-    def contact(self):
-        return render_template("contact.html")
-    
-    def home(self):
-        product = [{"name":"mobile","price":12000,"model":"s24"},
-                   {"name":"mobile","price":12000,"model":"s24"},
-                   {"name":"mobile","price":12000,"model":"s24"},
-                   {"name":"mobile","price":12000,"model":"s24"},
-                   {"name":"mobile","price":12000,"model":"s24"}]
-        return render_template("home.html",product = product)
-    
->>>>>>> e6087ec6c3a1780f9a634baaf575d87916e2192f

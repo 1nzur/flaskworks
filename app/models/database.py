@@ -90,8 +90,4 @@ class Database:
                 ("Admin", "admin@admin.com", generate_password_hash("admin123"), "admin"),
             )
 
-<<<<<<< HEAD
         db.close()
-=======
-        db.close()
->>>>>>> e6087ec6c3a1780f9a634baaf575d87916e2192f
