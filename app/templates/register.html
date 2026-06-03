@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Register page{% endblock%}
+{% block maincontent %}
+<form   method="POST">
+    NAME
+    <input type="text" name="name" id="">
+    Email
+    <input type="text" name="email" id="">
+    Password
+    <input type="text" name="password" id="">
+    <input type="submit" value="click me" id="">
+    <!-- <a href="{{url_for('auth.login')}}">Already have an account? Login here</a> -->
+</form>
+{%endblock%}
