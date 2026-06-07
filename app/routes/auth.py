@@ -26,5 +26,8 @@ class AuthRoutes:
         self.bp.route("/edit/<int:id>", methods=["GET", "POST"])(
             admin_required(self.controller.editUsers)
         )
+        self.bp.route("/delete/<int:id>", methods=["GET", "POST"])(
+            admin_required(self.controller.deleteUser)
+        )
 
         return self.bp

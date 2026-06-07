@@ -1,9 +1,4 @@
 Flask==3.1.0
-<<<<<<< HEAD
-
-pymysql
-=======
 pymysql==1.1.1
 cryptography==44.0.0
 flask-wtf==1.2.2
->>>>>>> e6087ec6c3a1780f9a634baaf575d87916e2192f

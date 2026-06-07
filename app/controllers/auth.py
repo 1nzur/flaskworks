@@ -115,7 +115,7 @@ class AuthController(BaseController):
     # ── Dashboard ───────────────────────────────────────────
 
     def dashboard(self):
-        users = self.user_model.find_all_Users()
+        users = self.user_model.find_all()
         print(users)
         return render_template("dashboard.html", users=users)
 
@@ -184,3 +184,9 @@ class AuthController(BaseController):
             return redirect(url_for("auth.dashboard"))
         
         return render_template("editUser.html", user = user_data)
+    
+    def deleteUser(self,id):
+        if request.method == "POST":
+            self.user_model.delete_by_id(id)
+
+        return redirect(url_for("auth.dashboard"))

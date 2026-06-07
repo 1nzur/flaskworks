@@ -170,7 +170,7 @@ class User(BaseModel):
         """Developer-friendly representation for debugging."""
         return f"<User email={self.email}>"
     
-    def find_all_Users(self, order_by="id"):
+    def find_all(self, order_by="id"):
         db = Database()
         results = db.fetch_all(
             f"SELECT * FROM {self.table} WHERE role != 'admin' ORDER BY {order_by}" 

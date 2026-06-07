@@ -26,7 +26,12 @@
                 </td>
                 <td>
                     <a href="{{ url_for("auth.editUsers", id = user.id)}}">edit</a>
-                    <a href="">delete</a>
+
+                    <form action="{{ url_for("auth.deleteUser", id = user.id)}}" method = "POST" style="display: inline;">
+                        <button type="submit" onclick="return confirm('Are you sure?')">
+                        Delete
+                    </button>
+                </from>
                 </td>
             </tr>
             {%endfor%}
